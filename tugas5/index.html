@@ -1,22 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <title>Manajemen Produk</title>
-</head>
-<body>
-  <h1>Manajemen Produk</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manajemen Produk</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      div {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+      }
+      input {
+        margin: 5px;
 
-  <input id="inputNama" placeholder="Nama produk">
-  <input id="inputHarga" type="number" placeholder="Harga">
-  <button id="btnTambah">Tambah</button>
-  <br><br>
-  <input id="inputId" type="number" placeholder="ID produk">
-  <button id="btnHapus">Hapus</button>
-  <button id="btnTampil">Tampilkan Semua</button>
+      }
+      button {
+        margin: 5px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      </style>
 
-  <ul id="daftarProduk"></ul>
+  </head>
+  <body>
+    <div>
+      <h1>Manajemen Produk</h1>
+    </div>
+    
+    <div>
+      <input id="inputNama" placeholder="Nama produk" />
+      <input id="inputHarga" type="number" placeholder="Harga" />
+      <button id="btnTambah">Tambah</button>
+      <br /><br />
+      <input id="inputId" type="number" placeholder="ID produk" />
+      <button id="btnHapus">Hapus</button>
+      <button id="btnTampil">Tampilkan Semua</button>
+  
+      <ul id="daftarProduk"></ul>
+    </div>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
